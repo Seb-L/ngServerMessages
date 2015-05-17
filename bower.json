@@ -1,0 +1,25 @@
+{
+  "name": "ngServerMessages",
+  "main": "ngServerMessages.min.js",
+  "version": "0.0.1",
+  "homepage": "https://github.com/Seb-L/ngServerMessages",
+  "authors": [
+    "Seb.L. <seb@platonicsolids.fr>"
+  ],
+  "description": "Intercept a specific http request, show a loading message and a specific http status messages.",
+  "keywords": [
+    "angular",
+    "directive",
+    "interceptor",
+    "http",
+    "messages"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
