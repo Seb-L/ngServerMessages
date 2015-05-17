@@ -13,7 +13,7 @@ Download the package with Bower:
 
 In your index.js:
 
-```
+```javascript
 angular.module('MyApp', ['ngServerMessages']);
 ```
 
@@ -21,7 +21,7 @@ angular.module('MyApp', ['ngServerMessages']);
 
 In your DOM:
 
-```
+```markup
 <div ng-server-messages="myRequest">
 	<div ng-server-message-loading class="alert">
 		<i class="fa fa-refresh fa-spin"></i> Loading...
@@ -46,7 +46,7 @@ For that we will use a custom header named : **X-ng-service-name**;
 
 With $http:
 
-```
+```javascript
 $http({
 	method: 'GET',
 	url: 'http://myurl.io/myendpoint',
@@ -58,7 +58,7 @@ $http({
 
 With $resource:
 
-```
+```javascript
 $resource('http://myurl.io/myendpoint', { 
 		myQueryParam: 'banana'
 	}, {
