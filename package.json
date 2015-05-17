@@ -1,0 +1,14 @@
+{
+  "name": "ngServerMessages",
+  "version": "0.0.1",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "~3.8.10",
+    "gulp-uglify": "~1.0.1",
+    "gulp-ng-annotate": "~0.3.6",
+    "gulp-rename": "~1.2.2"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  }
+}
