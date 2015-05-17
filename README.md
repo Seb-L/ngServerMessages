@@ -4,7 +4,7 @@ Intercept a specific http request, show a loading message and a specific http st
 
 ## Demo
 
-Codepen demo [here]()
+Codepen demo [here](http://codepen.io/SebL/pen/YXWpBz/)
 
 ## Install
 
