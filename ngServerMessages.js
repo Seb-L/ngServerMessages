@@ -8,19 +8,27 @@ angular.module('ngServerMessages', [])
 		$httpProvider.interceptors.push(function($rootScope, $q){
 			return {
 				'request': function(config) {
-					$rootScope.$broadcast('server.request.ok', config);
+					if(config){
+						$rootScope.$broadcast('server.request.ok', config);
+					}
 					return config;
 				},
 				'requestError': function(rejection) {
-					$rootScope.$broadcast('server.start.error', rejection);
+					if(rejection){
+						$rootScope.$broadcast('server.start.error', rejection);
+					}
 					return $q.reject(rejection);
 				},
 				'response': function(response) {
-					$rootScope.$broadcast('server.response.ok', response);
+					if(response){
+						$rootScope.$broadcast('server.response.ok', response);
+					}
 					return response;
 				},
 				'responseError': function(rejection) {
-					$rootScope.$broadcast('server.response.error', rejection);
+					if(rejection){
+						$rootScope.$broadcast('server.response.error', rejection);
+					}
 					return $q.reject(rejection);
 				}
 			}
